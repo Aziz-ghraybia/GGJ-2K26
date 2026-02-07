@@ -93,6 +93,8 @@ namespace GGJ.Controllers
             HandleMovement();
             HandleJump();
             HandleDash();
+            // Preserve original vision/formula using speed as a level:
+            runSpeed = (float)(speed * 1.25 + baseSpeed);
         }
 
         void HandleMovement()
